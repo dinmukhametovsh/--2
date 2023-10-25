@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<div class="container text-center">
+<meta charset="utf-8">
+<head><title>Sailaubekova Akzer laba2</title> </head>
+  <h1><font color="blue">Генератор паролей</font></h1>
+
+  <form action="{% url 'password' %}">
+    <select name="длина">
+      <option value="4" selected="selected">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select> Длина
+    <br>
+    <input type="checkbox" name="uppercase"> верхний регистр
+    <br>
+    <input type="checkbox" name="numbers"> цифры
+    <br>
+    <input type="checkbox" name="special"> символы
+    <br>
+
+    <input type="submit" value="выдать пароль" class="btn btn-primary">
+  </form>
+</div>
